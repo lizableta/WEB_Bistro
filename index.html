@@ -28,6 +28,56 @@
             <i class="fas fa-heart"></i>
             <i class="fas fa-shopping-cart"></i>
         </div>
-    </header> 
+    </header>  
+    <!--slider starts-->
+    <div class="home" id="home">
+        <div class="home-slider">
+            <div class="wrapper">
+                <div class="slide slide1">
+                    <div class="content">
+                        <img src="img/simbol.png" alt="">
+                        <h3>delicious food</h3>
+                        <h1>gift voucher</h1>
+                        <p>
+                            give away your beloved costumers
+                        </p>
+                        <a href="#" class="btn">Order now</a>
+                    </div>
+                </div>
+                <div class="slide slide2">
+                    <div class="content">
+                        <img src="img/simbol.png" alt="">
+                        <h3>sale of 10% on this dish</h3>
+                        <h1>the fresh</h1>
+                        <p>
+                            food restaurant
+                        </p>
+                        <a href="#" class="btn">Order now</a>
+                    </div>
+                </div>
+                <div class="slide slide3">
+                    <div class="content">
+                        <img src="img/simbol.png" alt="">
+                        <h3>we are open</h3>
+                        <h1>fresh food</h1>
+                        <p>
+                            left no crumbs
+                        </p>
+                        <a href="#" class="btn">Order now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--slider ends-->
+    <script type="text/javascript">
+        let menu = document.querySelector('#menu');
+        let navbar = document.querySelector('.navbar');
+
+        menu.onclick=()=>{
+            menu.classList.toggle('fa-times');
+            navbar.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>

@@ -71,7 +71,22 @@ header .icons i:hover{
 header .icons #menu {
     display: none;
 }
- /*navbar style end */
+ /*navbar style ends */
+
+/*slider starts*/
+.home .home-slider .slide {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: flex-start;
+}
+.home .home-slider .slide1{
+    background: url("pizza.jpg");
+}
+
+/*slider ends*/
+
+
 
 /*media query*/
  @media (max-width: 991px){
@@ -102,6 +117,11 @@ header .icons #menu {
     border-top: .1rem solid rgba(205, 170, 124, 0.2);
     border-bottom: .1rem solid rgba(205, 170, 124, 0.2);
     padding: 1rem;
+    clip-path: polygon(0 0,100% 0,100% 0,0 0);
+   }
+   header .navbar.active 
+   {
+    clip-path: polygon(0 0,100% 0, 100% 100%, 0 100%);
    }
    header .navbar a {
     display: block;
