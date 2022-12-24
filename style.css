@@ -37,7 +37,7 @@ header{
     z-index: 10000;
 }
 header .logo img{
-    height: auto;
+    height: 50px;
 }
 header .navbar a {
     font-size: 1.7rem;
@@ -61,4 +61,43 @@ header .icons i {
     font-size: 1.7rem;
     color: #fff;
 }
+
+/*per me i rrotllu kur ti preksh ikonat*/
+header .icons i:hover{
+    color: #fff;
+    background: var(--light-color);
+    transform: rotate(360deg);
+}
+header .icons #menu {
+    display: none;
+}
+ /*navbar style end */
+
+
+ @media (max-width: 991px){
+      html {
+        font-size: 55%;
+      }
+      header{
+        padding: 1rem 2rem;
+      }
+      header .logo img{
+        height: 7rem;
+      }
+ }
+ @media (max-width: 768px){
+   /* navbar media query*/
+   header .logo img{
+    height: 7rem;
+   }
+   header .icons #menu {
+    display: inline-block;
+   }
+   header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+   }
+ }
 
