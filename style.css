@@ -1,4 +1,4 @@
-:root 
+ :root 
 {
     --black:#333;
     --light-color:#cdaa7c;
@@ -48,6 +48,11 @@ header .navbar a:hover{
     border: .1rem solid rgba(205, 170, 124,0.2);
 }
 header .icons i {
-    
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    background: var(--light-color);
 }
 
