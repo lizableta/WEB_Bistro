@@ -130,7 +130,7 @@ margin-right: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffc107;
+  background-color: #c29e31;
   color: #333;
 }
 
@@ -140,10 +140,13 @@ margin-right: 30px;
   align-items: center;
   padding: 20px;
 }
-
+.bar-item-btn:hover{
+  background-color: rgb(218, 197, 114);
+}
 .bar-item-btn {
   color: #333;
   text-decoration: none;
+  
 }
 
 nav ul {
@@ -168,6 +171,8 @@ nav a {
   text-align: center;
 }
 
+/*contact*/
+
 .contactus {
   font-size: 14px;
   text-align: left;
@@ -180,6 +185,8 @@ nav a {
   color: #333;
   margin-bottom: 10px;
 }
+
+/*form*/
 
 form {
   display: flex;
@@ -219,12 +226,12 @@ button[type="submit"] {
   font-size: 14px;
   font-weight: 600;
 }
-
-.error {
-  color: red;
-  font-size: 12px;
-  margin-top: 5px;
+button:hover{
+  background-color: rgb(218, 197, 114);
+  border: 2px solid rgb(0, 0, 0);
 }
+ 
+/*footer*/
 
 footer {
   display: flex;
