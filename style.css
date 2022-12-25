@@ -63,9 +63,12 @@ letter-spacing: 5px;
 }
 
 .about{
-  width: 50%;
+  width: 600px;
+  height: 600px;
   float: right;
   margin: 10px;
+  padding-left: 50px;
+  justify-content: space-evenly;
 }
 
 .display-container{
@@ -102,4 +105,19 @@ hr {
 
 .content{
   padding-top: 40px;
+  padding-right: 20px;
 }
+
+.row-padding{
+  display: flex;
+}
+
+.menu {
+  width: 50%;
+  align-items: left;
+}
+.menutext {
+  width: 50%;
+  text-align: right;
+}
+
