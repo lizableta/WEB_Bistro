@@ -48,11 +48,12 @@ letter-spacing: 5px;
   background-color: white;
   text-align: left;
 }
+
 .bar-item-btn{
   color: black;
   text-align: right;
-  
 }
+
 .klasa1 {
   display: flex;
   align-items: right;
