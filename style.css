@@ -227,7 +227,7 @@ button[type="submit"] {
   font-weight: 600;
 }
 button:hover{
-  background-color: rgb(218, 197, 114);
+  background-color: #c29e31;
   border: 2px solid rgb(0, 0, 0);
 }
  
@@ -237,13 +237,13 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
-  color: #fff;
+  background-color: #c29e31;
+  color: rgb(3, 3, 3);
   padding: 1rem;
 }
 
 footer a {
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 
 footer i {
