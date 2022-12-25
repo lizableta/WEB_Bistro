@@ -9,8 +9,8 @@ letter-spacing: 5px;
   letter-spacing: 4px;
 }
 .display-container{
-  max-width: 1600px;
-  min-width: 500px;
+  /*max-width: 1600px;
+  min-width: 500px;*/
   position: relative;
 }
 .img{
@@ -105,6 +105,8 @@ hr {
 .row-padding{
   display: flex;
   padding-top: 10px;
+  padding-left: 60px;
+  
 }
 
 .menu {
@@ -117,6 +119,7 @@ hr {
 .menutext {
   width: 50%;
   text-align: right;
+  padding-left: 100px;
 }
 
 .contact{
@@ -130,4 +133,12 @@ hr {
 .menu li {
   display: inline-block;  /* Display the list items as inline blocks */
   margin-right: 10px;  /* Add space between the list items */
+}
+
+.menutext li{
+  color: rgb(128, 128, 128);
+}
+
+.center{
+  padding-top: 40x;
 }
