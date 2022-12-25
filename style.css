@@ -10,6 +10,11 @@ letter-spacing: 5px;
 }
 .bar{
   letter-spacing: 4px;
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
 
 }
 
@@ -17,16 +22,14 @@ letter-spacing: 5px;
   position: relative;
 }
 .img{
-  width: 100%;
+  width: auto;
   height: 3%;
   object-fit: contain;
 }
 .content{
   max-width: 1100px;
-}
-
-.content{
-  max-width: 1100px;
+  padding-top: 40px;
+  padding-right: 20px;
 }
 
 .menu{
@@ -34,14 +37,20 @@ letter-spacing: 5px;
 }
 
 .top{
-  background-color: white;
   text-align: left;
   overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #c29e31;
+  color: #333;
 }
 
 .bar-item-btn{
   color: black;
   text-align: right;
+  color: #333;
+  text-decoration: none;
 }
 
 .klasa1 {
@@ -72,15 +81,11 @@ letter-spacing: 5px;
 }
 
 hr {
-  width: 100%;
+  width: 150%;
   clear: both;
   margin-top: 40px;
 }
 
-.content{
-  padding-top: 40px;
-  padding-right: 20px;
-}
 
 .row-padding{
   display: flex;
@@ -105,9 +110,6 @@ margin-right: 30px;
   padding-left: 100px;
 }
 
-.contact{
-  background-color: lightgray;
-}
 
 .menutext ul{
     list-style: none; /* Remove the default list styling */
@@ -134,19 +136,8 @@ margin-right: 30px;
   color: #333;
 }
 
-.bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-}
 .bar-item-btn:hover{
   background-color: rgb(218, 197, 114);
-}
-.bar-item-btn {
-  color: #333;
-  text-decoration: none;
-  
 }
 
 nav ul {
@@ -185,7 +176,7 @@ nav a {
   font-weight: 600;
   color: #333;
   margin-bottom: 10px;
-  
+  background-color: lightgray;
 }
 
 /*form*/
@@ -247,11 +238,4 @@ footer {
   width: 100%;
 }
 
-footer a {
-  color: rgb(0, 0, 0);
-}
 
-footer i {
-  font-size: 1.5rem;
-  margin-left: 0.5rem;
-}
