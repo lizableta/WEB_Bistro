@@ -131,3 +131,11 @@ hr {
   display: inline-block;  /* Display the list items as inline blocks */
   margin-right: 10px;  /* Add space between the list items */
 }
+
+.menutext li{
+  color: rgb(128, 128, 128);
+}
+
+.center{
+  padding-top: 40x;
+}
