@@ -89,16 +89,85 @@
             <p>We offer full-service for any type of event. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
             <p class="text"><b>Bistro Restaurant, Via Atigliana, 23/25, 80067 Rome, Italy</b></p>
             <p>You can also contact us by phone 049 123 456-044 123 456 or email bistrorestaurant@gmail.com, or you can send us a message here:</p>
-            <script>
-                function validateForm() {
-                let x = document.forms["myForm"]["fname"].value;
-                if (x == "") {
-                alert("Name must be filled out");
-                return false;
-                }
-            }
-            </script>
         </div>
+       <!--Form-->
+       <div class="container">
+        <form id="form" action="/">
+            <div class="input-control">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="surname">Surname</label>
+                <input id="surname" name="surname" type="surname">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="number">How many people?</label>
+                <input id="number"name="number" type="number">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="date">Date&Time</label>
+                <input id="date"name="date" type="date">
+                <div class="error"></div>
+            </div>
+            <button type="submit" >Submit</button>
+        </form>
+    </div>
+    <script >
+      const form = document.getElementById('form');
+      const name = document.getElementById('name');
+      const surname = document.getElementById('surname');
+      const number = document.getElementById('number');
+      const date = document.getElementById('date');
+
+      form.addEventListener('submit', e => {
+    e.preventDefault();
+
+    validateInputs();
+  });
+
+  const setError = (element, message) => {
+    const inputControl = element.parentElement;
+    const errorDisplay = inputControl.querySelector('.error');
+
+    errorDisplay.innerText = message;
+    inputControl.classList.add('error');
+    inputControl.classList.remove('success')
+}
+const setSuccess = element => {
+    const inputControl = element.parentElement;
+    const errorDisplay = inputControl.querySelector('.error');
+
+    errorDisplay.innerText = '';
+    inputControl.classList.add('success');
+    inputControl.classList.remove('error');
+};
+
+const validateInputs = () => {
+    const nameValue = username.value.trim();
+    const surnameValue = email.value.trim();
+    const dateValue = password2.value.trim();
+
+    if(nameValue === '') {
+        setError(name, 'Name is required');
+    } else {
+        setSuccess(name);
+    }
+    if(surnameValue === '') {
+        setError(surname, 'Surname is required');
+    } else {
+        setSuccess(surname);
+    }
+    if(dateValue === '') {
+        setError(date, 'Date is required');
+    } else {
+        setSuccess(date);
+    }
+};
+    </script>
 
     
         
