@@ -1,6 +1,7 @@
 body {
   font-family: "Times New Roman", Georgia, Serif;
-  margin: 0%;
+  margin: 0 auto;
+    
 }
 h1, h2, h3, h4, h5, h6 {
 font-family: "Playfair Display";
@@ -8,7 +9,9 @@ letter-spacing: 5px;
 }
 .bar{
   letter-spacing: 4px;
+
 }
+
 .display-container{
   position: relative;
 }
@@ -32,6 +35,7 @@ letter-spacing: 5px;
 .top{
   background-color: white;
   text-align: left;
+  overflow: hidden;
 }
 
 .bar-item-btn{
@@ -219,4 +223,12 @@ button[type="submit"] {
   color: red;
   font-size: 12px;
   margin-top: 5px;
+}
+
+.footer{
+    
+    background-color: rgb(213, 179, 98);
+    text-align: center;
+    padding: 20px;
+  
 }
