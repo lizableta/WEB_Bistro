@@ -177,6 +177,7 @@ nav a {
   font-size: 14px;
   text-align: left;
   margin-bottom: 20px;
+ 
 }
 
 .contact {
@@ -184,6 +185,7 @@ nav a {
   font-weight: 600;
   color: #333;
   margin-bottom: 10px;
+  
 }
 
 /*form*/
@@ -225,6 +227,7 @@ button[type="submit"] {
   cursor: pointer;
   font-size: 14px;
   font-weight: 600;
+  width: 100%;
 }
 button:hover{
   background-color: #c29e31;
@@ -240,6 +243,8 @@ footer {
   background-color: #c29e31;
   color: rgb(3, 3, 3);
   padding: 1rem;
+  padding-left: 1000px;
+  width: 100%;
 }
 
 footer a {
