@@ -2,104 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Bistro Restaurant</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    
-    <link rel="stylesheet" type="text/css" href="style.css">
-
-      <!-- Link Swiper's CSS -->
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-    />
-
+    <title>Bistro</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-        <a href="#" class="logo"><img src="img/logo1.jpg"></a>
-
-        <nav class="navbar">
-            <a href="#home" class="active">home</a>
-            <a href="#about" >about</a>
-            <a href="#menu" >menu</a>
-            <a href="#team" >team</a>
-            <a href="#reservation">reservation</a>
-            <a href="#blog">blog</a>
-        </nav>
-
-        <div class="icons">
-            <i class="fas fa-bars" id="menu"></i>
-            <i class="fas fa-search"></i>
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-shopping-cart"></i>
-        </div>
-    </header>  
-    <!--slider starts-->
-    <div class="home" id="home">
-        <div class="swiper home-slider">
-            <div class="swipper-wrapper wrapper">
-                <div class="swiper-slide slide slide1">
-                    <div class="content">
-                        <img src="img/simbol.png" alt="">
-                        <h3>delicious food</h3>
-                        <h1>gift voucher</h1>
-                        <p>
-                            give away your beloved costumers
-                        </p>
-                        <a href="#" class="btn">Order now</a>
-                    </div>
-                </div>
-                <div class="swiper-slide slide slide2">
-                    <div class="content">
-                        <img src="img/simbol.png" alt="">
-                        <h3>sale of 10% on this dish</h3>
-                        <h1>the fresh</h1>
-                        <p>
-                            food restaurant
-                        </p>
-                        <a href="#" class="btn">Order now</a>
-                    </div>
-                </div>
-                <div class="swiper-slide slide slide3">
-                    <div class="content">
-                        <img src="img/simbol.png" alt="">
-                        <h3>we are open</h3>
-                        <h1>fresh food</h1>
-                        <p>
-                            left no crumbs
-                        </p>
-                        <a href="#" class="btn">Order now</a>
-                    </div>
-                </div>
+    <!--Navbari-->
+    <div class="top">
+        <div class="bar">
+            <a href="#home" class="bar-item btn">FIFA Bistro</a>
+            <div class="klasa1">
+                <a href="#about" class="bar-item btn">About</a>
+                <a href="#menu" class="bar-item btn">Menu</a>
+                <a href="#contact" class="bar-item btn">Contact Us</a>
             </div>
-            <div class="swiper-pagination "></div>
         </div>
     </div>
-    <!--slider ends-->
 
-    <script>
-        var swiper = new Swiper(".home-slider", {
-          spaceBetween: 30,
-          centeredSlides: true,
-          autoplay: {
-            delay: 5500,
-            disableOnInteraction: false,
-          },
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-        loop:true,
-        });
-      </script>
-    <script type="text/javascript">
-        let menu = document.querySelector('#menu');
-        let navbar = document.querySelector('.navbar');
+    <!--Header-->
+    <header class="diplay-container ">
+        <img class="img" src="img/pyca.jpg" alt="Pizza" >
+        <div class="display-bottomleft">
+            <h1 class="klasa2">LaBistro</h1>
+        </div>
+    </header>
 
-        menu.onclick=()=>{
-            menu.classList.toggle('fa-times');
-            navbar.classList.toggle('active');
-        }
-    </script>
+    <!--Kontenti -->
+    <div class="content">
+        <div class="row padding" id="about">
+            <div class="col ">
+                <img src="" alt="" class="about">
+
+            </div>
+
+        </div>
+
+    </div>
+<body>
 </body>
 </html>
